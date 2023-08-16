@@ -12,6 +12,6 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-@app.get("/root")
+@app.get("/")
 async def root():
     return {"message": "Hello World From Fast API"}
