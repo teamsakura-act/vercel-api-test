@@ -14,4 +14,4 @@ app.add_middleware(
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World From Fast API"}
+    return {"message": "Hello World From Fast API", "countryCode": "Test001", "countryName": "Test国",}
