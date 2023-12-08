@@ -13,5 +13,5 @@ app.add_middleware(
 )
 
 @app.get("/")
-async def root():
-    return {"message": "Hello World From Fast API", "countryCode": "Test001", "countryName": "Test国",}
+async def search_countryflag(base64data: str):  
+    return {"message": "Hello World From Fast API", "countryCode": "Test001", "countryName": base64data}
