@@ -14,4 +14,8 @@ app.add_middleware(
 
 @app.get("/")
 async def search_countryflag(base64data: str):  
-    return {"message": "Hello World From Fast API", "countryCode": "Test001", "countryName": base64data}
+    return {"errorMessage": "errorTest", "code": "testCode", "name": "testName", "status": "0"}
+
+@app.get("/population/")
+async def scraping_population(countryCode: str, countryName: str):  
+    return {"errorMessage": "errorTest", "status": "0", "population": "テスト人"}
